@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recaman Sequence Visualization</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            height: 100vh; /* Ensure full viewport height */
+        }
+        canvas {
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+        #sliderContainer {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 600px; /* Limiting width for better alignment */
+        }
+        #slider {
+            flex: 1;
+            margin-left: 10px;
+        }
+        #sliderValue {
+            font-size: 18px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="recamanCanvas" width="1200" height="680"></canvas>
+    <div id="sliderContainer">
+        <span>Recaman Sequence Index:</span>
+        <input type="range" id="slider" min="0" max="65" value="65">
+        <span id="sliderValue">65</span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
